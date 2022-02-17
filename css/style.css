@@ -13,15 +13,33 @@ h1 {
 }
 
 img {
-  width: 700px;
+  width: 650px;
 }
 
 #income {
   width: 500px;
+  margin-right: 50px;
+  margin-left: 150px;
+  padding: 60px 80px;
   background-color: #f8f8f8;
+  border-radius: 10px;
 }
 
 .error {
   color: red;
   display: none;
+}
+
+@media only screen and (max-width: 688px) {
+  img {
+    width: 340px;
+  }
+  #income {
+    width: 300px;
+    margin: 20px;
+    padding: 50px 20px;
+  }
+  .expenses {
+    flex-direction: row;
+  }
 }
