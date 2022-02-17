@@ -17,7 +17,6 @@ const calculateButton = document
       parseFloat(clothes.value);
 
     // Balance
-    const balance = document.getElementById("balance");
     balance.innerText =
       parseFloat(income.value) - parseFloat(totalExpenses.innerText);
 
@@ -47,10 +46,11 @@ const calculateButton = document
       insufficientIncome.style.display = "none";
       totalExpenses.innerText = 0;
       balance.innerText = 0;
-    } else if (totalExpenses.innerText > income.value) {
+    } else if (parseFloat(totalExpenses.innerText) > income.value) {
       insufficientIncome.style.display = "block";
       errorNegativeNumber.style.display = "none";
       errorString.style.display = "none";
+      balance.innerText = 0;
     } else {
       errorNegativeNumber.style.display = "none";
       errorString.style.display = "none";
