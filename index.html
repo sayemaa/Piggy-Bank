@@ -74,17 +74,30 @@
                 </div>
               </div>
             </div>
+
+            <!-- Income & Expenses Error Message -->
+            <div class="text-center">
+              <p id="error-negative" class="error">
+                Please enter a positive number
+              </p>
+              <p id="error-string" class="error">Please enter a number</p>
+              <p id="insufficient-income" class="error">
+                Expenses cannot be greater than income
+              </p>
+            </div>
+
+            <!-- Calculate Button -->
             <button id="calculate-btn" class="btn btn-primary mt-2">
               Calculate
             </button>
 
             <!-- Total Expenses -->
             <h5 class="my-3">
-              Total Expenses: <span id="total-expenses">00</span>
+              Total Expenses: $<span id="total-expenses">0</span>
             </h5>
 
             <!-- Balance -->
-            <h5 class="mb-3">Balance: <span id="balance">00</span></h5>
+            <h5 class="mb-3">Balance: $<span id="balance">0</span></h5>
 
             <!-- Save -->
             <div class="d-flex my-2 align-items-center">
@@ -99,19 +112,28 @@
               <div
                 class="d-flex justify-content-around align-items-center w-75"
               >
-                <p class="fw-bold">%</p>
+                <h3 class="mt-2">%</h3>
                 <button id="save-btn" class="btn btn-primary w-50">Save</button>
               </div>
             </div>
 
+            <!-- Save Error Message -->
+            <div class="text-center mt-2">
+              <p id="save-error-negative" class="error">
+                Please enter a positive number
+              </p>
+              <p id="save-error-string" class="error">Please enter a number</p>
+              <p id="insufficient-balance" class="error">Not enough balance</p>
+            </div>
+
             <!-- Saving Amount -->
-            <h5 class="my-2">
-              Saving Amount: <span id="saving-amount">00</span>
+            <h5 class="mb-2">
+              Saving Amount: $<span id="saving-amount">0</span>
             </h5>
 
             <!-- Remaining Balance -->
             <h5 class="my-2">
-              Remaining Balance: <span id="remaining-balance">00</span>
+              Remaining Balance: $<span id="remaining-balance">0</span>
             </h5>
           </div>
         </div>

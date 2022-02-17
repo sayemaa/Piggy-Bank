@@ -20,3 +20,8 @@ img {
   width: 500px;
   background-color: #f8f8f8;
 }
+
+.error {
+  color: red;
+  display: none;
+}
